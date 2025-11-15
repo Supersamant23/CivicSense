@@ -1,0 +1,109 @@
+[
+    {
+        "id": 1,
+        "cleaned_text": "progressive front pf believe inclusive growth sustainable technology equitable education progressive front envisions future every citizen access digital infrastructure renewable energy fair opportunities employment support universal basic income experiments increased investment green industries healthcare must affordable government data remain open transparent",
+        "tags": [
+            "Economy",
+            "Education",
+            "Technology"
+        ],
+        "policy_scores": {
+            "Economy": 3,
+            "Environment": 3,
+            "Education": 5,
+            "Healthcare": 5,
+            "Social Justice": 3,
+            "Technology": 5,
+            "Agriculture": 3,
+            "Defense": 3,
+            "Foreign Policy": 3,
+            "Infrastructure": 5
+        }
+    },
+    {
+        "id": 2,
+        "cleaned_text": "national revival  nrp national revival  committed strengthening national security reviving traditional industries protecting cultural heritage support tax cuts small businesses domestic manufacturing vision selfreliant nation invests defense innovation youth leadership programs environmental policy must balance growth conservation sacrifice jobs ideology",
+        "tags": [
+            "Economy",
+            "Technology",
+            "Defense"
+        ],
+        "policy_scores": {
+            "Economy": 3,
+            "Environment": 5,
+            "Education": 3,
+            "Healthcare": 3,
+            "Social Justice": 3,
+            "Technology": 3,
+            "Agriculture": 3,
+            "Defense": 5,
+            "Foreign Policy": 3,
+            "Infrastructure": 3
+        }
+    },
+    {
+        "id": 3,
+        "cleaned_text": "peoples justice alliance pja peoples justice alliance stands fairness equality accountability advocate progressive taxation public housing reforms social protection vulnerable groups focus reform policing ensure gender justice strengthen rights workers minorities climate action sustainable agriculture essential future education healthcare privileges rights",
+        "tags": [
+            "Environment",
+            "Education",
+            "Social Justice",
+            "Agriculture",
+            "Infrastructure"
+        ],
+        "policy_scores": {
+            "Economy": 3,
+            "Environment": 3,
+            "Education": 5,
+            "Healthcare": 5,
+            "Social Justice": 3,
+            "Technology": 3,
+            "Agriculture": 5,
+            "Defense": 3,
+            "Foreign Policy": 3,
+            "Infrastructure": 3
+        }
+    },
+    {
+        "id": 4,
+        "cleaned_text": "future tech vision ftv future tech vision believes technology greatest enabler human progress propose national ai research centers blockchainbased governance digital literacy programs ages ftv supports ethical ai laws data privacy cyber defense initiatives encourage international collaboration space research clean technology innovation economic policy must adapt automation prepare citizens aidriven world",
+        "tags": [
+            "Technology",
+            "Defense",
+            "Foreign Policy"
+        ],
+        "policy_scores": {
+            "Economy": 3,
+            "Environment": 3,
+            "Education": 3,
+            "Healthcare": 3,
+            "Social Justice": 3,
+            "Technology": 5,
+            "Agriculture": 3,
+            "Defense": 5,
+            "Foreign Policy": 3,
+            "Infrastructure": 3
+        }
+    },
+    {
+        "id": 5,
+        "cleaned_text": "green nation collective gnc green nation collective prioritizes environmental restoration biodiversity sustainable living aim reduce carbon emissions within years ban singleuse plastics promote circular economy principles policies encourage local farming renewable energy cooperatives wildlife conservation believe climate justice indigenous rights inseparable gnc also promotes mental health programs ecofriendly urban design",
+        "tags": [
+            "Environment",
+            "Healthcare",
+            "Social Justice"
+        ],
+        "policy_scores": {
+            "Economy": 5,
+            "Environment": 5,
+            "Education": 3,
+            "Healthcare": 3,
+            "Social Justice": 3,
+            "Technology": 3,
+            "Agriculture": 3,
+            "Defense": 3,
+            "Foreign Policy": 3,
+            "Infrastructure": 3
+        }
+    }
+]

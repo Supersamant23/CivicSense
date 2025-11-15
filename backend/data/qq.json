@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "question": "Do you support government initiatives to boost economic growth?",
+        "tag": "Economy",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 2,
+        "question": "Should government increase funding for schools and universities?",
+        "tag": "Education",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 3,
+        "question": "Should government promote research and innovation in technology?",
+        "tag": "Technology",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 4,
+        "question": "Do you agree with conservation programs for forests and wildlife?",
+        "tag": "Environment",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 5,
+        "question": "Do you support government initiatives for mental health?",
+        "tag": "Healthcare",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 6,
+        "question": "Do you support increased government spending on national defense?",
+        "tag": "Defense",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 7,
+        "question": "Should infrastructure projects prioritize sustainability?",
+        "tag": "Infrastructure",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 8,
+        "question": "Do you support strengthening diplomatic relations internationally?",
+        "tag": "Foreign Policy",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 9,
+        "question": "Should laws be strengthened to ensure equality and social justice?",
+        "tag": "Social Justice",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    },
+    {
+        "id": 10,
+        "question": "Should irrigation and soil improvement programs be prioritized?",
+        "tag": "Agriculture",
+        "options": {
+            "1": "Strongly Disagree",
+            "2": "Disagree",
+            "3": "Neutral",
+            "4": "Agree",
+            "5": "Strongly Agree"
+        }
+    }
+]

@@ -1,0 +1,133 @@
+// frontend/src/Quiz.jsx
+
+import React, { useState, useEffect } from 'react'
+
+// This is the URL of your Flask server.
+// Make sure your Flask server is running!
+const API_URL = 'http://127.0.0.1:5000'
+
+function Quiz() {
+  const [questions, setQuestions] = useState([])
+  const [answers, setAnswers] = useState({})
+  const [results, setResults] = useState(null)
+  const [loading, setLoading] = useState(true)
+
+  // 1. Fetch questions from the backend when the component loads
+  useEffect(() => {
+    // Start your Flask server (python app.py)
+    fetch(`${API_URL}/api/quiz`)
+      .then((res) => res.json())
+      .then((data) => {
+        setQuestions(data)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Error fetching questions:', err)
+        setLoading(false)
+      })
+  }, []) // The empty array [] means this runs only once
+
+  // 2. Handle when a user clicks an answer
+  const handleAnswerChange = (questionId, answerValue) => {
+    setAnswers({
+      ...answers, // Keep old answers
+      [questionId]: answerValue, // Add/update new answer
+    })
+  }
+
+  // 3. Handle submitting the quiz
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    // We just need the list of answer values, e.g., [5, 4, 3, ...]
+    const answerValues = questions.map((q) => answers[q.id] || 3) // Default to 3 (Neutral)
+
+    fetch(`${API_URL}/api/align`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ answers: answerValues }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setResults(data) // Save the alignment results
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Error submitting quiz:', err)
+        setLoading(false)
+      })
+  }
+
+  // --- Render the UI ---
+
+  if (loading && !results) {
+    return <div>Loading questions...</div>
+  }
+
+  // Show results *after* submitting
+  if (results) {
+    return (
+      <div className="results-container">
+        <h2>Your Results</h2>
+        <div className="alignment-scores">
+          <h3>Your Top Matches:</h3>
+          {results.alignment_results.slice(0, 3).map((res) => (
+            <div key={res.manifesto_id} className="result-item">
+              <strong>
+                {res.name} ({res.alignment}%)
+              </strong>
+              <p>{res.summary}</p>
+            </div>
+          ))}
+        </div>
+        <div className="policy-summary">
+          <h3>Your Policy Preferences:</h3>
+          <ul>
+            {results.user_preferences.map(([tag, score]) => (
+              <li key={tag}>
+                {tag}: {score} / 5
+              </li>
+            ))}
+          </ul>
+        </div>
+        <button onClick={() => setResults(null)}>Take Quiz Again</button>
+      </div>
+    )
+  }
+
+  // Show the quiz by default
+  return (
+    <form className="quiz-form" onSubmit={handleSubmit}>
+      <h2>Policy Quiz</h2>
+      {questions.map((q, index) => (
+        <div key={q.id} className="question-block">
+          <p>
+            {index + 1}. {q.question}
+          </p>
+          <div className="options-group">
+            {[1, 2, 3, 4, 5].map((value) => (
+              <label key={value}>
+                <input
+                  type="radio"
+                  name={`question-${q.id}`}
+                  value={value}
+                  onChange={() => handleAnswerChange(q.id, value)}
+                  required
+                />
+                {q.options[value]}
+              </label>
+            ))}
+          </div>
+        </div>
+      ))}
+      <button type="submit" disabled={loading}>
+        {loading ? 'Submitting...' : 'See Your Results'}
+      </button>
+    </form>
+  )
+}
+
+export default Quiz

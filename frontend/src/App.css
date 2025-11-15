@@ -1,0 +1,156 @@
+/* frontend/src/App.css */
+
+/* --- 1. Global & App Styles --- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+}
+
+.app-container {
+  width: 100%;
+}
+
+h1 {
+  color: #e0e0e0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  margin-top: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 2rem 0;
+}
+
+/* --- 2. Quiz Form --- */
+.quiz-form h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+.question-block {
+  background-color: #252525;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #333;
+}
+
+.question-block p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0f0f0;
+  margin-top: 0;
+}
+
+.options-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.options-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.options-group label:hover {
+  background-color: #383838;
+}
+
+.options-group input[type='radio'] {
+  margin-right: 0.75rem;
+  accent-color: #007bff; /* Gives the radio button a nice color */
+}
+
+/* --- 3. Button Styles --- */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* --- 4. Results Page --- */
+.results-container h2 {
+  font-size: 2rem;
+}
+
+.result-item {
+  background-color: #252525;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.result-item strong {
+  font-size: 1.3rem;
+  color: #00aaff;
+}
+
+.result-item p {
+  font-size: 1rem;
+  color: #c0c0c0;
+  margin-top: 0.5rem;
+}
+
+.policy-summary {
+  margin-top: 2rem;
+}
+
+.policy-summary h3 {
+  font-size: 1.5rem;
+}
+
+.policy-summary ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.policy-summary li {
+  font-size: 1.1rem;
+  background-color: #2a2a2a;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
