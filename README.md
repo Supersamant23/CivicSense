@@ -1,4 +1,4 @@
-🏛️ Civic Sense
+# 🏛️ Civic Sense
 
 Civic Sense is a full-stack web application designed to help voters understand political manifestos. It uses AI to analyze complex policy documents, simplifies them, and generates a personalized quiz to help users find which manifesto aligns with their views.
 
