@@ -1,109 +1,198 @@
 [
     {
         "id": 1,
-        "cleaned_text": "progressive front pf believe inclusive growth sustainable technology equitable education progressive front envisions future every citizen access digital infrastructure renewable energy fair opportunities employment support universal basic income experiments increased investment green industries healthcare must affordable government data remain open transparent",
-        "tags": [
-            "Economy",
-            "Education",
-            "Technology"
-        ],
-        "policy_scores": {
-            "Economy": 3,
-            "Environment": 3,
-            "Education": 5,
-            "Healthcare": 5,
-            "Social Justice": 3,
-            "Technology": 5,
-            "Agriculture": 3,
-            "Defense": 3,
-            "Foreign Policy": 3,
-            "Infrastructure": 5
+        "name": "Aitc Ge 2024 Manifesto English",
+        "analysis": {
+            "summary": "This manifesto outlines a vision centered on extending Bengal's welfare-based governance models to the national level, emphasizing social security, federal rights for states, and support for marginalized communities. It positions itself in direct opposition to the incumbent Union Government's policies, promising to repeal controversial laws like the CAA and increase government spending on healthcare, education, and agriculture. The overall tone is strongly focused on social welfare, government intervention in the economy, and protecting secularism.",
+            "policy_scores": {
+                "Economy": {
+                    "score": 1,
+                    "explanation": "The party promises to cap fuel prices, provide free cooking gas cylinders to poor families, and reform GST to give states more control."
+                },
+                "Education": {
+                    "score": 1,
+                    "explanation": "The party plans to double government spending on education and significantly increase scholarships for students from marginalized communities."
+                },
+                "Technology": {
+                    "score": 2,
+                    "explanation": "The party aims to protect citizens' digital rights from surveillance while also promoting government-led digital service centers."
+                },
+                "Environment": {
+                    "score": 2,
+                    "explanation": "The party pledges to strengthen environmental laws to protect forests and improve air quality through government programs."
+                },
+                "Healthcare": {
+                    "score": 1,
+                    "explanation": "The party plans to triple the national healthcare budget and replace the current health insurance with a new scheme offering double the coverage."
+                },
+                "Defense": {
+                    "score": 2,
+                    "explanation": "The party promises to scrap the 'Agnipath' short-term military recruitment scheme and revert to traditional recruitment methods."
+                },
+                "Infrastructure": {
+                    "score": 2,
+                    "explanation": "The party commits to large government-funded projects, including providing housing for all poor families and ensuring universal tap water access."
+                },
+                "Foreign Policy": {
+                    "score": 3,
+                    "explanation": "This policy was not clearly mentioned."
+                },
+                "Social Justice": {
+                    "score": 1,
+                    "explanation": "The party promises to abolish the Citizenship Amendment Act (CAA), oppose a Uniform Civil Code, and provide direct monthly financial aid to all women nationwide."
+                },
+                "Agriculture": {
+                    "score": 1,
+                    "explanation": "The party promises to make the Minimum Support Price (MSP) a legal guarantee for farmers, ensuring they are paid at least 50% above their production cost."
+                }
+            }
         }
     },
     {
         "id": 2,
-        "cleaned_text": "national revival  nrp national revival  committed strengthening national security reviving traditional industries protecting cultural heritage support tax cuts small businesses domestic manufacturing vision selfreliant nation invests defense innovation youth leadership programs environmental policy must balance growth conservation sacrifice jobs ideology",
-        "tags": [
-            "Economy",
-            "Technology",
-            "Defense"
-        ],
-        "policy_scores": {
-            "Economy": 3,
-            "Environment": 5,
-            "Education": 3,
-            "Healthcare": 3,
-            "Social Justice": 3,
-            "Technology": 3,
-            "Agriculture": 3,
-            "Defense": 5,
-            "Foreign Policy": 3,
-            "Infrastructure": 3
+        "name": "Congress Manifesto English 2024 Dyoxp 4E",
+        "analysis": {
+            "summary": "This manifesto centers on social and economic justice, proposing significant welfare programs, job creation initiatives, and strengthened affirmative action policies. It aims to reverse what it describes as the democratic and institutional erosion of the past decade by defending constitutional values and individual freedoms.",
+            "policy_scores": {
+                "Economy": {
+                    "score": 2,
+                    "explanation": "The party advocates for a mixed economy focused on job creation through support for the private sector, alongside significant government intervention like an urban employment guarantee and tax reforms favoring smaller businesses."
+                },
+                "Education": {
+                    "score": 1,
+                    "explanation": "The party proposes to make education from Class I to XII compulsory and free in public schools, write off student loans, and increase government funding and control over the education system."
+                },
+                "Technology": {
+                    "score": 2,
+                    "explanation": "The party supports leveraging technology like AI but plans to increase regulation to protect privacy, curb monopolies, and ensure freedom of speech online."
+                },
+                "Environment": {
+                    "score": 1,
+                    "explanation": "The party proposes strong, government-led action through an independent environmental authority and a 'Green New Deal' investment program to tackle climate change and pollution."
+                },
+                "Healthcare": {
+                    "score": 1,
+                    "explanation": "The party commits to a universal, free public healthcare system and a large-scale, government-backed cashless health insurance program for all citizens."
+                },
+                "Defense": {
+                    "score": 2,
+                    "explanation": "The party plans to scrap the short-term 'Agnipath' military recruitment scheme in favor of a traditional system with guaranteed long-term employment and benefits for soldiers."
+                },
+                "Infrastructure": {
+                    "score": 2,
+                    "explanation": "The party plans to increase public and private investment while ensuring infrastructure projects like railways primarily serve the common people and avoiding the privatization of public assets."
+                },
+                "Foreign Policy": {
+                    "score": 3,
+                    "explanation": "The party advocates for restoring a traditional, consensus-based foreign policy focused on strategic autonomy, multilateral engagement, and repairing relationships with neighboring countries."
+                },
+                "Social Justice": {
+                    "score": 1,
+                    "explanation": "The party strongly advocates for affirmative action by proposing a national caste census, raising the cap on reservations, and introducing a law to recognize civil unions for LGBTQIA+ couples."
+                },
+                "Agriculture": {
+                    "score": 1,
+                    "explanation": "The party promises major government intervention in agriculture by providing a legal guarantee for Minimum Support Prices (MSP) for crops to protect farmer incomes."
+                }
+            }
         }
     },
     {
         "id": 3,
-        "cleaned_text": "peoples justice alliance pja peoples justice alliance stands fairness equality accountability advocate progressive taxation public housing reforms social protection vulnerable groups focus reform policing ensure gender justice strengthen rights workers minorities climate action sustainable agriculture essential future education healthcare privileges rights",
-        "tags": [
-            "Environment",
-            "Education",
-            "Social Justice",
-            "Agriculture",
-            "Infrastructure"
-        ],
-        "policy_scores": {
-            "Economy": 3,
-            "Environment": 3,
-            "Education": 5,
-            "Healthcare": 5,
-            "Social Justice": 3,
-            "Technology": 3,
-            "Agriculture": 5,
-            "Defense": 3,
-            "Foreign Policy": 3,
-            "Infrastructure": 3
+        "name": "Cpi Manifesto Final (1)",
+        "analysis": {
+            "summary": "This manifesto presents a strong critique of the incumbent BJP government, accusing it of being pro-corporate, anti-people, and undermining India's secular and federal structure. The Communist Party of India proposes a state-led economic and social model, advocating for the rights of workers, farmers, and marginalized communities. Key goals include reversing privatization, expanding social welfare programs funded by higher taxes on corporations and the wealthy, and strengthening constitutional values of secularism and social justice.",
+            "policy_scores": {
+                "Economy": {
+                    "score": 1,
+                    "explanation": "The party advocates for increased taxes on the wealthy and corporations, opposes privatization, and wants to reinstate the Planning Commission for state-led economic development."
+                },
+                "Education": {
+                    "score": 1,
+                    "explanation": "The party proposes scrapping the current education policy, significantly increasing public spending to 10% of GDP, and providing free, universal education for all children."
+                },
+                "Technology": {
+                    "score": 2,
+                    "explanation": "The party supports using technology for the public good through increased government R&D funding and modifying intellectual property laws to favor people over corporations."
+                },
+                "Environment": {
+                    "score": 1,
+                    "explanation": "The party proposes strong environmental protection by conserving forests, opposing corporate encroachment on natural resources, and implementing climate change agreements."
+                },
+                "Healthcare": {
+                    "score": 1,
+                    "explanation": "The party advocates for a universal, free public healthcare system funded by at least 6% of GDP and aims to stop the commercialization of medical services."
+                },
+                "Defense": {
+                    "score": 2,
+                    "explanation": "The party's main defense policy is to scrap the Agnipath scheme to ensure better employment conditions and job security for armed forces personnel."
+                },
+                "Infrastructure": {
+                    "score": 2,
+                    "explanation": "The party supports building infrastructure, particularly for housing, health, and education, through public sector initiatives to ensure equitable development."
+                },
+                "Foreign Policy": {
+                    "score": 1,
+                    "explanation": "The party advocates for an independent, non-aligned foreign policy that opposes 'imperialist' influence, supports Palestine, and strengthens ties with the Global South."
+                },
+                "Social Justice": {
+                    "score": 1,
+                    "explanation": "The party proposes strengthening social justice by extending reservations to the private sector, removing the 50% quota cap, scrapping the CAA, and implementing women's reservation immediately."
+                },
+                "Agriculture": {
+                    "score": 1,
+                    "explanation": "The party supports farmers with legally guaranteed minimum prices, a one-time loan waiver, subsidies on inputs, and protection from corporate influence in agriculture."
+                }
+            }
         }
     },
     {
         "id": 4,
-        "cleaned_text": "future tech vision ftv future tech vision believes technology greatest enabler human progress propose national ai research centers blockchainbased governance digital literacy programs ages ftv supports ethical ai laws data privacy cyber defense initiatives encourage international collaboration space research clean technology innovation economic policy must adapt automation prepare citizens aidriven world",
-        "tags": [
-            "Technology",
-            "Defense",
-            "Foreign Policy"
-        ],
-        "policy_scores": {
-            "Economy": 3,
-            "Environment": 3,
-            "Education": 3,
-            "Healthcare": 3,
-            "Social Justice": 3,
-            "Technology": 5,
-            "Agriculture": 3,
-            "Defense": 5,
-            "Foreign Policy": 3,
-            "Infrastructure": 3
-        }
-    },
-    {
-        "id": 5,
-        "cleaned_text": "green nation collective gnc green nation collective prioritizes environmental restoration biodiversity sustainable living aim reduce carbon emissions within years ban singleuse plastics promote circular economy principles policies encourage local farming renewable energy cooperatives wildlife conservation believe climate justice indigenous rights inseparable gnc also promotes mental health programs ecofriendly urban design",
-        "tags": [
-            "Environment",
-            "Healthcare",
-            "Social Justice"
-        ],
-        "policy_scores": {
-            "Economy": 5,
-            "Environment": 5,
-            "Education": 3,
-            "Healthcare": 3,
-            "Social Justice": 3,
-            "Technology": 3,
-            "Agriculture": 3,
-            "Defense": 3,
-            "Foreign Policy": 3,
-            "Infrastructure": 3
+        "name": "Election Manifesto English April 2024",
+        "analysis": {
+            "summary": "This manifesto presents the upcoming election as a critical battle to save India's secular, democratic republic from the BJP's authoritarian and communal rule. It calls for the comprehensive defeat of the BJP and its allies to form an alternative secular government. The proposed policies focus on reversing privatization, expanding the public sector, increasing social welfare spending, and strengthening the rights of workers, farmers, and marginalized communities.",
+            "policy_scores": {
+                "Economy": {
+                    "score": 1,
+                    "explanation": "The party advocates for reversing privatization, increasing taxes on the super-rich, and expanding public sector control over the economy."
+                },
+                "Education": {
+                    "score": 1,
+                    "explanation": "The party proposes a major expansion of the public education system, an increase in spending to 6% of GDP, and an end to privatization and communalization."
+                },
+                "Technology": {
+                    "score": 1,
+                    "explanation": "The party advocates for regulating big tech companies, promoting public digital infrastructure, and protecting citizens from state and corporate surveillance."
+                },
+                "Environment": {
+                    "score": 1,
+                    "explanation": "The party calls for stronger environmental regulations, a just transition to renewable energy, and halting the privatization of natural resources."
+                },
+                "Healthcare": {
+                    "score": 1,
+                    "explanation": "The party calls for a universal public healthcare system funded by raising public spending and ending private insurance-led models."
+                },
+                "Defense": {
+                    "score": 1,
+                    "explanation": "The party advocates for withdrawing from strategic alliances with the US, strengthening public sector defense manufacturing, and pursuing a non-aligned policy."
+                },
+                "Infrastructure": {
+                    "score": 1,
+                    "explanation": "The party proposes reversing the privatization of infrastructure and wants public sector entities to control its construction, operation, and maintenance."
+                },
+                "Foreign Policy": {
+                    "score": 1,
+                    "explanation": "The party advocates for a non-aligned foreign policy, opposing strategic alliances with the US and supporting the Palestinian cause."
+                },
+                "Social Justice": {
+                    "score": 1,
+                    "explanation": "The party supports extensive affirmative action including private sector reservations, a caste census, immediate women's reservation, and robust protections for minorities."
+                },
+                "Agriculture": {
+                    "score": 1,
+                    "explanation": "The party demands a legally guaranteed minimum support price for crops, comprehensive debt waivers for farmers, and the implementation of land reforms."
+                }
+            }
         }
     }
 ]

@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "question": "Should government increase funding for schools and universities?",
+        "question": "Do you support free higher education for all students?",
         "tag": "Education",
         "options": {
             "1": "Strongly Disagree",
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "question": "Should government promote research and innovation in technology?",
+        "question": "Should artificial intelligence and automation be regulated to prevent misuse?",
         "tag": "Technology",
         "options": {
             "1": "Strongly Disagree",
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "question": "Do you agree with conservation programs for forests and wildlife?",
+        "question": "Should stricter policies be enforced to reduce pollution?",
         "tag": "Environment",
         "options": {
             "1": "Strongly Disagree",
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "question": "Do you support increased government spending on national defense?",
+        "question": "Should military modernization programs be prioritized?",
         "tag": "Defense",
         "options": {
             "1": "Strongly Disagree",
@@ -73,7 +73,7 @@
     },
     {
         "id": 7,
-        "question": "Should infrastructure projects prioritize sustainability?",
+        "question": "Do you support development of roads, bridges, and housing?",
         "tag": "Infrastructure",
         "options": {
             "1": "Strongly Disagree",
@@ -97,7 +97,7 @@
     },
     {
         "id": 9,
-        "question": "Should laws be strengthened to ensure equality and social justice?",
+        "question": "Do you support policies promoting gender equality?",
         "tag": "Social Justice",
         "options": {
             "1": "Strongly Disagree",
@@ -109,7 +109,7 @@
     },
     {
         "id": 10,
-        "question": "Should irrigation and soil improvement programs be prioritized?",
+        "question": "Do you support government subsidies for agriculture?",
         "tag": "Agriculture",
         "options": {
             "1": "Strongly Disagree",

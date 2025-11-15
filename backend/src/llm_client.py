@@ -15,9 +15,9 @@ class LLMClient:
 
     def _setup_provider(self):
         if self.provider == "google":
-            genai = importlib.import_module("google.generativeai")
-            genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel("gemini-pro-latest") # Note: You may want to update this model name
+            self.genai = importlib.import_module("google.generativeai")
+            self.genai.configure(api_key=self.api_key)
+            self.model = self.genai.GenerativeModel("gemini-2.5-pro") # Note: You may want to update this model name
             self._generate_func = self._generate_gemini
 
         elif self.provider == "openai":
@@ -41,7 +41,16 @@ class LLMClient:
         return self._generate_func(prompt)
 
     def _generate_gemini(self, prompt: str) -> str:
-        return self.model.generate_content(prompt).text
+        # Tell Gemini we want JSON output
+        generation_config = self.genai.GenerationConfig(
+            response_mime_type="application/json"
+        )
+        
+        response = self.model.generate_content(
+            prompt,
+            generation_config=generation_config
+        )
+        return response.text
 
     def _generate_openai(self, prompt: str) -> str:
         # Note: Updated to use the new OpenAI client (v1.0+)
