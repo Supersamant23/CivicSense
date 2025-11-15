@@ -17,7 +17,7 @@ class LLMClient:
         if self.provider == "google":
             self.genai = importlib.import_module("google.generativeai")
             self.genai.configure(api_key=self.api_key)
-            self.model = self.genai.GenerativeModel("gemini-2.5-pro") # Note: You may want to update this model name
+            self.model = self.genai.GenerativeModel("gemini-1.5-pro") # Updated model
             self._generate_func = self._generate_gemini
 
         elif self.provider == "openai":
@@ -36,15 +36,15 @@ class LLMClient:
         else:
             raise ValueError(f"Unsupported provider: {self.provider}")
 
-    def generate(self, prompt: str) -> str:
+    def generate(self, prompt: str, output_json: bool = True) -> str:
         """Generate text using the configured model."""
-        return self._generate_func(prompt)
+        return self._generate_func(prompt, output_json)
 
-    def _generate_gemini(self, prompt: str) -> str:
-        # Tell Gemini we want JSON output
+    def _generate_gemini(self, prompt: str, output_json: bool = True) -> str:
+        # Toggle response mime type based on the flag
         generation_config = self.genai.GenerationConfig(
             response_mime_type="application/json"
-        )
+        ) if output_json else None
         
         response = self.model.generate_content(
             prompt,
@@ -52,18 +52,23 @@ class LLMClient:
         )
         return response.text
 
-    def _generate_openai(self, prompt: str) -> str:
-        # Note: Updated to use the new OpenAI client (v1.0+)
+    def _generate_openai(self, prompt: str, output_json: bool = True) -> str:
+        # Toggle response_format based on the flag
+        response_format = {"type": "json_object"} if output_json else {"type": "text"}
+        
         response = self.client.chat.completions.create(
             model="gpt-4o-mini", # Using 4o-mini for speed and cost
             messages=[{"role": "user", "content": prompt}],
+            response_format=response_format # Apply the format
         )
         return response.choices[0].message.content
 
-    def _generate_anthropic(self, prompt: str) -> str:
+    def _generate_anthropic(self, prompt: str, output_json: bool = True) -> str:
+        # output_json flag is accepted for signature consistency but ignored
+        # as Anthropic's JSON mode is controlled via the prompt itself.
         response = self.client.messages.create(
             model="claude-3-5-sonnet-latest", # Using latest Sonnet
-            max_tokens=4096, # Increased max_tokens
+            max_tokens=4096,
             messages=[{"role": "user", "content": prompt}],
         )
         return response.content[0].text

@@ -64,7 +64,7 @@ function Quiz() {
   // --- Render the UI ---
 
   if (loading && !results) {
-    return <div>Loading questions...</div>
+    return <div>Loading results...</div>
   }
 
   // Show results *after* submitting

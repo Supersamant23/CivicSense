@@ -4,6 +4,7 @@ import sys
 from pathlib import Path
 from flask import Flask, jsonify, request
 from flask_cors import CORS
+import os # Added for API key access
 
 # --- Add backend directory to path ---
 # This ensures we can import from 'src'
@@ -11,12 +12,32 @@ backend_dir = Path(__file__).resolve().parent
 sys.path.append(str(backend_dir))
 # ------------------------------------
 
-# Import our quiz engine functions
+# Import our quiz engine functions and LLMClient
 from src import (
     load_quiz_questions,
     load_manifestos,
-    compute_alignment
+    compute_alignment,
+    LLMClient # Added import
 )
+
+# --- LLM Client Initialization ---
+# Load API key from .env (which should be loaded by quiz_engine)
+# NOTE: 1_run_analysis.py uses GOOGLE_API_KEY as the default
+API_KEY = os.getenv("GOOGLE_API_KEY") 
+PROVIDER = "google"
+llm = None
+if API_KEY:
+    try:
+        llm = LLMClient(provider=PROVIDER, api_key=API_KEY)
+        print(f"--- LLM client for explanations initialized (provider: {PROVIDER}) ---")
+    except Exception as e:
+        print(f"Warning: Could not initialize LLM client for explanations. {e}")
+        print("Falling back to short explanations.")
+else:
+    print("Warning: GOOGLE_API_KEY not found in .env.")
+    print("LLM explanations will be disabled. Falling back to short explanations.")
+# ---------------------------------
+
 
 # Initialize the Flask app
 app = Flask(__name__)
@@ -66,7 +87,8 @@ def get_alignment():
 
     try:
         # Run our existing quiz engine logic!
-        results = compute_alignment(user_answers)
+        # --- MODIFIED: Pass the initialized llm client ---
+        results = compute_alignment(user_answers, llm_client=llm)
         return jsonify(results)
     
     except Exception as e:
