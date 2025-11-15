@@ -1,12 +1,11 @@
 // frontend/src/App.jsx
+// (No changes)
 
-import React from 'react' // No longer need useEffect
+import React from 'react'
 import './App.css'
 import Quiz from './Quiz'
 
 function App() {
-  // Mouse-tracking useEffect has been removed
-
   return (
     <div className="app-container">
       <div className="content-wrapper fade-in-up">
@@ -15,7 +14,6 @@ function App() {
           <p>Helping you understand where you stand.</p>
         </header>
         
-        {/* Replaced the old divider with a clean, minimal one */}
         <hr className="minimal-divider" />
 
         <main>

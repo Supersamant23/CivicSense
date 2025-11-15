@@ -1,36 +1,34 @@
 /* frontend/src/App.css */
 
-/* --- 0. Variables & Reset --- */
+/* --- 0. Variables & Reset (Saturated) --- */
 :root {
-  /* Indian Flag Palette */
-  --saffron: #FF9933;
+  /* ... (variables remain the same) ... */
+  --saffron: #FF6600;
   --white: #FFFFFF;
-  --green: #138808;
-  --navy: #000080;
-  
-  /* Minimalist Glass Theme */
+  --green: #00A300;
+  --navy: #0000CD;
   --text-main: #0f0f1a; 
   --text-muted: #4a4a5e;
-  
-  /* Sleeker Glass: Less white, more translucent */
   --bg-card: rgba(255, 255, 255, 0.4); 
   --border-card: rgba(255, 255, 255, 0.6);
-  --shadow: 0 8px 32px 0 rgba(0, 0, 128, 0.15); /* Softer shadow */
-
+  --shadow: 0 8px 32px 0 rgba(0, 0, 128, 0.15);
   --transition: all 0.3s ease;
 }
 
 body {
+  /* ... (body styles remain the same) ... */
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: var(--text-main);
+  color: #f0f0f0; 
   margin: 0;
   padding: 0;
   min-height: 100vh;
   overflow-y: auto;
   overflow-x: hidden; 
+  position: relative;
 }
 
 #root {
+  /* ... (root styles remain the same) ... */
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -40,47 +38,37 @@ body {
   z-index: 1;
 }
 
-/* --- 1. Background Layer --- */
-
-/* The "Breathing" Background */
+/* --- 1. Background Layer (Saturated) --- */
 body::before {
+  /* ... (background styles remain the same) ... */
   content: '';
   position: fixed;
   top: -20%; left: -20%; right: -20%; bottom: -20%;
   z-index: -2;
-  /* Using a softer linear gradient */
   background: linear-gradient(
     67deg, 
-    rgba(255, 128, 0, 0.6), /* Softer Saffron */
-    rgba(255, 255, 255, 0.8), /* Softer White */
-    rgba(21, 255, 0, 0.5)     /* Softer Green */
+    rgba(255, 102, 0, 0.6),
+    rgba(255, 255, 255, 0.8), 
+    rgba(0, 255, 0, 0.5)
   );
   background-size: 300% 300%;
-  filter: blur(100px); /* Increased blur for more subtlety */
+  filter: blur(100px);
   opacity: 0.9;
-  animation: breathe 5s ease-in-out infinite alternate;
+  animation: breathe 10s ease-in-out infinite alternate;
 }
 
 @keyframes breathe {
-  0% {
-    transform: scale(1);
-    background-position: 0% 50%;
-  }
-  100% {
-    transform: scale(1.15);
-    background-position: 100% 50%;
-  }
+  0% { transform: scale(1); background-position: 0% 50%; }
+  100% { transform: scale(1.15); background-position: 100% 50%; }
 }
-
-/* MOUSE SPOTLIGHT (body::after) has been REMOVED */
 
 /* --- 2. Animations --- */
 .fade-in-up {
+  /* ... (fade-in styles remain the same) ... */
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
   transform: translateY(20px);
 }
-
 @keyframes fadeInUp {
   to { opacity: 1; transform: translateY(0); }
 }
@@ -98,39 +86,50 @@ body::before {
   letter-spacing: -1px;
   background: linear-gradient(
     90deg, 
-    var(--navy) 0%, 
-    var(--saffron) 25%, 
-    var(--navy) 50%, 
-    var(--green) 75%, 
-    var(--navy) 100%
+    var(--saffron) 0%, 
+    var(--white) 50%, 
+    var(--green) 100% 
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shimmer 5s linear infinite;
+  
+  /* GLOW EFFECT: Removed dark shadow, added bright white glow */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  
+  animation: breathe-title 12s ease-in-out infinite alternate;
 }
 
-@keyframes shimmer {
-  to { background-position: 200% center; }
+@keyframes breathe-title {
+  0% {
+    background-size: 200% auto;
+    background-position: 0% center;
+  }
+  100% {
+    background-size: 300% auto;
+    background-position: 100% center;
+  }
 }
 
-p {
+.app-header p {
+  /* ... (paragraph styles remain the same) ... */
   font-size: 1.15rem;
-  color: var(--text-muted);
+  color: #f0f0f0; 
   line-height: 1.6;
   font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
-/* --- 4. Minimal Divider --- */
+/* --- (All other styles remain the same) --- */
 
-/* CHAKRA ICON and old dividers REMOVED */
+/* --- 4. Minimal Divider --- */
 .minimal-divider {
   border: none;
   height: 1px;
   background: linear-gradient(
     90deg, 
     transparent, 
-    rgba(0, 0, 128, 0.3), /* Subtle Navy */
+    rgba(255, 255, 255, 0.4), 
     transparent
   );
   margin: 3rem 0;
@@ -139,7 +138,7 @@ p {
 /* --- 5. Glass Cards --- */
 .question-block, .result-item {
   background: var(--bg-card);
-  backdrop-filter: blur(20px); /* Increased blur for sleeker glass */
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-card);
   border-radius: 20px;
@@ -148,13 +147,11 @@ p {
   box-shadow: var(--shadow);
   transition: var(--transition);
 }
-
 .question-block:hover {
   transform: translateY(-5px);
   background: rgba(255, 255, 255, 0.5);
   box-shadow: 0 12px 35px 0 rgba(0, 0, 128, 0.2);
 }
-
 .question-block p {
   font-size: 1.35rem;
   font-weight: 700;
@@ -162,13 +159,12 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* --- 6. Inputs & Options --- */
+/* --- 6. Inputs & Options (Saturated) --- */
 .options-group {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 .options-group label {
   display: flex;
   align-items: center;
@@ -182,19 +178,15 @@ p {
   font-weight: 600;
   font-size: 1.05rem;
 }
-
 .options-group label:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
-
 .options-group label:has(input:checked) {
   background-color: var(--white);
   border-color: var(--border-card);
   color: var(--navy);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
-/* Custom Radio */
 .options-group input[type='radio'] {
   appearance: none;
   width: 22px;
@@ -206,33 +198,32 @@ p {
   place-content: center;
   transition: var(--transition);
 }
-
 .options-group input[type='radio']::before {
   content: '';
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--navy); /* Changed dot to Navy for minimalism */
+  background: var(--green);
   transform: scale(0);
   transition: var(--transition);
 }
-
 .options-group input[type='radio']:checked {
-  border-color: var(--navy);
+  border-width: 2px;
+  border-image: linear-gradient(45deg, var(--saffron), var(--green)) 1;
 }
 .options-group input[type='radio']:checked::before {
   transform: scale(1);
 }
 
-/* --- 7. Minimalist Button --- */
+/* --- 7. Minimalist Button (Saturated) --- */
 button {
-  background-color: var(--navy); /* Solid color */
+  background-color: var(--navy);
   color: white;
   border: none;
   padding: 1.1rem 2.5rem;
   font-size: 1rem;
   font-weight: 700;
-  border-radius: 12px; /* Less rounded, more modern */
+  border-radius: 12px;
   cursor: pointer;
   transition: var(--transition);
   text-transform: uppercase;
@@ -240,22 +231,13 @@ button {
   box-shadow: 0 5px 15px rgba(0, 0, 128, 0.2);
   margin-top: 1rem;
 }
-
 button:hover {
-  transform: translateY(-3px);
-  background-color: #0000a0; /* Slightly lighter navy */
-  box-shadow: 0 8px 20px rgba(0, 0, 128, 0.25);
+  transform: scale(1.02);
+  background-color: #0000FF;
+  box-shadow: 0 0 20px 5px rgba(255, 102, 0, 0.4);
 }
 
-button:disabled {
-  background: #ccc;
-  color: #888;
-  box-shadow: none;
-  cursor: not-allowed;
-  transform: none;
-}
-
-/* --- 8. Results Page --- */
+/* --- 8. Results Page (Saturated) --- */
 .result-item strong {
   display: block;
   font-size: 1.6rem;
@@ -264,7 +246,6 @@ button:disabled {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .policy-summary li {
   background: rgba(255, 255, 255, 0.5);
   border-left: 5px solid var(--green);
@@ -274,10 +255,26 @@ button:disabled {
   font-size: 1rem;
 }
 
+/* --- 9. Footer --- */
 .app-footer {
   text-align: center;
   margin-top: 4rem;
   opacity: 0.8;
   font-weight: 600;
-  color: var(--navy);
+  color: rgba(255, 255, 255, 0.7); 
+}
+
+/* --- 10. Themed Scrollbar (Saturated) --- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--saffron), var(--green));
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FF8C00, #00FF00);
 }
