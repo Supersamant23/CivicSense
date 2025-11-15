@@ -87,14 +87,13 @@ function Quiz() {
                 <div className="top-match-details" style={{ marginTop: '1.5rem' }}>
                   
                   {/* Top Matching Policies (if they exist) */}
-                  {/* We re-use the 'policy-summary' class to automatically get the 'li' styling from App.css */}
                   {res.top_matching_policies && res.top_matching_policies.length > 0 && (
                     <div className="policy-summary" style={{ marginTop: '1.5rem', background: 'none', border: 'none', padding: 0, boxShadow: 'none' }}>
                       <h5 style={{color: '#0f0f1a', marginBottom: '1rem'}}>Your Top Policy Alignments:</h5>
                       <ul>
                         {res.top_matching_policies.map((policy) => (
                           <li key={policy.tag} style={{ borderLeft: '5px solid var(--green)' }}> {/* Added green border */}
-                            <strong>{policy.tag}</strong> ({policy.similarity_score}% Match)
+                            <strong>{policy.tag}</strong> {/* Score removed as requested */}
                             {/* Add a paragraph for the explanation, matching the pattern */}
                             <p style={{margin: 0, marginTop: '0.5rem', fontSize: '0.95rem'}}>
                               {policy.explanation}
@@ -104,6 +103,25 @@ function Quiz() {
                       </ul>
                     </div>
                   )}
+
+                  {/* --- NEW SECTION: TOP DISAGREEMENTS --- */}
+                  {res.top_disagreements && res.top_disagreements.length > 0 && (
+                    <div className="policy-summary" style={{ marginTop: '1.5rem', background: 'none', border: 'none', padding: 0, boxShadow: 'none' }}>
+                      <h5 style={{color: '#0f0f1a', marginBottom: '1rem'}}>Your Top Policy Disagreements:</h5>
+                      <ul>
+                        {res.top_disagreements.map((policy) => (
+                          <li key={policy.tag} style={{ borderLeft: '5px solid var(--saffron)' }}> {/* Added saffron/red border */}
+                            <strong>{policy.tag}</strong> {/* Score removed as requested */}
+                            <p style={{margin: 0, marginTop: '0.5rem', fontSize: '0.95rem'}}>
+                              {policy.explanation}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {/* --- END NEW SECTION --- */}
+
                 </div>
               )}
               {/* --- END MODIFIED SECTION --- */}
@@ -112,17 +130,6 @@ function Quiz() {
           ))}
         </div>
 
-        {/* This is the original "Your Policy Preferences" block, it remains unchanged */}
-        <div className="policy-summary">
-          <h3>Your Policy Preferences:</h3>
-          <ul>
-            {results.user_preferences.map(([tag, score]) => (
-              <li key={tag}>
-                {tag}: {score} / 5
-              </li>
-            ))}
-          </ul>
-        </div>
         <button onClick={() => setResults(null)}>Take Quiz Again</button>
       </div>
     )

@@ -147,8 +147,15 @@ def compute_alignment(user_answers: list[int], llm_client: LLMClient = None) -> 
         else:
             alignment_percentage = (score_sum / total_answer_count) * 100
             
-        # Sort this party's policies by similarity
-        policy_similarities.sort(key=lambda x: x['similarity_score'], reverse=True)
+        # --- MODIFICATION START ---
+        
+        # Sort for TOP matches (descending similarity)
+        top_matches = sorted(policy_similarities, key=lambda x: x['similarity_score'], reverse=True)
+        
+        # Sort for WORST matches (ascending similarity)
+        top_disagreements = sorted(policy_similarities, key=lambda x: x['similarity_score'])
+
+        # --- MODIFICATION END ---
 
         alignment_results.append({
             "manifesto_id": m["id"],
@@ -156,8 +163,10 @@ def compute_alignment(user_answers: list[int], llm_client: LLMClient = None) -> 
             "alignment": round(alignment_percentage, 1),
             "summary": m.get("analysis", {}).get("summary", "No summary available."),
             
-            # --- This key provides the "highlight" you asked for ---
-            "top_matching_policies": policy_similarities[:3] 
+            # --- MODIFIED KEY ---
+            "top_matching_policies": top_matches[:3],
+            # --- NEW KEY ---
+            "top_disagreements": top_disagreements[:3] 
         })
 
     # Sort final results descending by alignment
