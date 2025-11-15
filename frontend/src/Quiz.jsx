@@ -74,15 +74,45 @@ function Quiz() {
         <h2>Your Results</h2>
         <div className="alignment-scores">
           <h3>Your Top Matches:</h3>
-          {results.alignment_results.slice(0, 3).map((res) => (
+          {results.alignment_results.slice(0, 3).map((res, index) => (
             <div key={res.manifesto_id} className="result-item">
               <strong>
                 {res.name} ({res.alignment}%)
               </strong>
               <p>{res.summary}</p>
+
+              {/* --- MODIFIED SECTION --- */}
+              {/* Only show details for the #1 match (index 0) */}
+              {index === 0 && (
+                <div className="top-match-details" style={{ marginTop: '1.5rem' }}>
+                  
+                  {/* Top Matching Policies (if they exist) */}
+                  {/* We re-use the 'policy-summary' class to automatically get the 'li' styling from App.css */}
+                  {res.top_matching_policies && res.top_matching_policies.length > 0 && (
+                    <div className="policy-summary" style={{ marginTop: '1.5rem', background: 'none', border: 'none', padding: 0, boxShadow: 'none' }}>
+                      <h5 style={{color: '#0f0f1a', marginBottom: '1rem'}}>Your Top Policy Alignments:</h5>
+                      <ul>
+                        {res.top_matching_policies.map((policy) => (
+                          <li key={policy.tag} style={{ borderLeft: '5px solid var(--green)' }}> {/* Added green border */}
+                            <strong>{policy.tag}</strong> ({policy.similarity_score}% Match)
+                            {/* Add a paragraph for the explanation, matching the pattern */}
+                            <p style={{margin: 0, marginTop: '0.5rem', fontSize: '0.95rem'}}>
+                              {policy.explanation}
+                            </p>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+              {/* --- END MODIFIED SECTION --- */}
+
             </div>
           ))}
         </div>
+
+        {/* This is the original "Your Policy Preferences" block, it remains unchanged */}
         <div className="policy-summary">
           <h3>Your Policy Preferences:</h3>
           <ul>
