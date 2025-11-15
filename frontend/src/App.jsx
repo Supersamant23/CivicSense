@@ -1,31 +1,77 @@
 // frontend/src/App.jsx
-// (No changes)
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import './App.css';
+import Quiz from './Quiz';
+import LandingPage from './LandingPage';
 
-import React from 'react'
-import './App.css'
-import Quiz from './Quiz'
+// --- COMPONENT 1: The Top-Left Button ---
+// This component correctly renders the button in the top-left corner
+// and hides it on the homepage.
+function FixedBackButton() {
+  const location = useLocation();
 
-function App() {
+  if (location.pathname === '/') {
+    return null;
+  }
+
   return (
-    <div className="app-container">
-      <div className="content-wrapper fade-in-up">
-        <header className="app-header">
-          <h1 className="shimmer-text">Civic Sense</h1>
-          <p>Helping you understand where you stand.</p>
-        </header>
-        
-        <hr className="minimal-divider" />
-
-        <main>
-          <Quiz />
-        </main>
-
-        <footer className="app-footer">
-          <p>&copy; {new Date().getFullYear()} Jai Hind</p>
-        </footer>
-      </div>
-    </div>
-  )
+    <Link to="/" className="fixed-back-btn">
+      Back to Home
+    </Link>
+  );
 }
 
-export default App
+
+// --- COMPONENT 2: Your Main App ---
+function App() {
+  return (
+    <Router>
+      <div className="app-container">
+        
+        {/* HERE is the one and only button. 
+          It is OUTSIDE the content wrapper. 
+        */}
+        <FixedBackButton />
+
+        {/* This div animates your content */}
+        <div className="content-wrapper fade-in-up">
+          <Routes>
+            {/* Landing Page */}
+            <Route path="/" element={<LandingPage />} />
+
+            {/* Quiz Page */}
+            <Route
+              path="/quiz"
+              element={
+                <>
+                  {/*
+                    LOOK: The <header> block below is CLEAN.
+                    It ONLY has the <h1> and <p> tags.
+                    The second and third buttons are GONE.
+                  */}
+                  <header className="app-header">
+                    <h1 className="shimmer-text">Civic Sense</h1>
+                    <p>Helping you understand where you stand.</p>
+                  </header>
+
+                  <hr className="minimal-divider" />
+
+                  <main>
+                    <Quiz />
+                  </main>
+
+                  <footer className="app-footer">
+                    <p>&copy; {new Date().getFullYear()} Jai Hind</p>
+                  </footer>
+                </>
+              }
+            />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;

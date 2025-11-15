@@ -278,3 +278,16 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #FF8C00, #00FF00);
 }
+
+
+/* Hide on scroll down */
+.fixed-back-btn.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Show when scrolling up */
+.fixed-back-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,9 +1,6 @@
-// frontend/src/Quiz.jsx
-
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
-// This is the URL of your Flask server.
-// Make sure your Flask server is running!
 const API_URL = 'http://127.0.0.1:5000'
 
 function Quiz() {
@@ -12,9 +9,11 @@ function Quiz() {
   const [results, setResults] = useState(null)
   const [loading, setLoading] = useState(true)
 
-  // 1. Fetch questions from the backend when the component loads
+  // NEW: Back button visibility
+  const [showBack, setShowBack] = useState(true)
+  let lastScroll = window.pageYOffset
+
   useEffect(() => {
-    // Start your Flask server (python app.py)
     fetch(`${API_URL}/api/quiz`)
       .then((res) => res.json())
       .then((data) => {
@@ -25,34 +24,35 @@ function Quiz() {
         console.error('Error fetching questions:', err)
         setLoading(false)
       })
-  }, []) // The empty array [] means this runs only once
 
-  // 2. Handle when a user clicks an answer
+    // Scroll listener for back button
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset
+      setShowBack(lastScroll > currentScroll || currentScroll < 10)
+      lastScroll = currentScroll
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const handleAnswerChange = (questionId, answerValue) => {
-    setAnswers({
-      ...answers, // Keep old answers
-      [questionId]: answerValue, // Add/update new answer
-    })
+    setAnswers({ ...answers, [questionId]: answerValue })
   }
 
-  // 3. Handle submitting the quiz
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
 
-    // We just need the list of answer values, e.g., [5, 4, 3, ...]
-    const answerValues = questions.map((q) => answers[q.id] || 3) // Default to 3 (Neutral)
+    const answerValues = questions.map((q) => answers[q.id] || 3)
 
     fetch(`${API_URL}/api/align`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ answers: answerValues }),
     })
       .then((res) => res.json())
       .then((data) => {
-        setResults(data) // Save the alignment results
+        setResults(data)
         setLoading(false)
       })
       .catch((err) => {
@@ -61,16 +61,22 @@ function Quiz() {
       })
   }
 
-  // --- Render the UI ---
+  if (loading && !results) return <div>Loading questions...</div>
 
-  if (loading && !results) {
-    return <div>Loading questions...</div>
-  }
+  const backButton = (
+    <Link
+      to="/"
+      className={`primary-btn fixed-back-btn ${showBack ? 'show' : 'hide'}`}
+    >
+      Back to Home
+    </Link>
+  )
 
-  // Show results *after* submitting
   if (results) {
     return (
       <div className="results-container">
+        {backButton}
+
         <h2>Your Results</h2>
         <div className="alignment-scores">
           <h3>Your Top Matches:</h3>
@@ -98,9 +104,10 @@ function Quiz() {
     )
   }
 
-  // Show the quiz by default
   return (
     <form className="quiz-form" onSubmit={handleSubmit}>
+      {backButton}
+
       <h2>Policy Quiz</h2>
       {questions.map((q, index) => (
         <div key={q.id} className="question-block">
