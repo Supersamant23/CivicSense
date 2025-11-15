@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "question": "Do you support free higher education for all students?",
+        "question": "Should education be more practical and skill-oriented?",
         "tag": "Education",
         "options": {
             "1": "Strongly Disagree",
@@ -25,7 +25,7 @@
     },
     {
         "id": 3,
-        "question": "Should artificial intelligence and automation be regulated to prevent misuse?",
+        "question": "Should government promote research and innovation in technology?",
         "tag": "Technology",
         "options": {
             "1": "Strongly Disagree",
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "question": "Should stricter policies be enforced to reduce pollution?",
+        "question": "Do you support increased funding for renewable energy?",
         "tag": "Environment",
         "options": {
             "1": "Strongly Disagree",
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "question": "Should military modernization programs be prioritized?",
+        "question": "Do you support increased government spending on national defense?",
         "tag": "Defense",
         "options": {
             "1": "Strongly Disagree",
@@ -85,7 +85,7 @@
     },
     {
         "id": 8,
-        "question": "Do you support strengthening diplomatic relations internationally?",
+        "question": "Should government prioritize trade agreements with other countries?",
         "tag": "Foreign Policy",
         "options": {
             "1": "Strongly Disagree",
@@ -97,7 +97,7 @@
     },
     {
         "id": 9,
-        "question": "Do you support policies promoting gender equality?",
+        "question": "Should the government take action against discrimination?",
         "tag": "Social Justice",
         "options": {
             "1": "Strongly Disagree",
