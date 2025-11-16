@@ -3,35 +3,35 @@
         "id": 1,
         "name": "All India Trinamool Congress Party Manifesto English (2024)",
         "analysis": {
-            "summary": "This manifesto focuses on extending Bengal's state-level welfare programs, such as direct cash assistance and free rations, to the national level. It strongly opposes the policies of the current Union Government, advocating for greater states' rights, the repeal of controversial laws like the CAA, and increased social security spending. The overall vision is a welfare state with significant government intervention in the economy to support workers, farmers, and marginalized communities.",
+            "summary": "This manifesto presents a strong populist and welfare-focused vision, aiming to expand Bengal's social security schemes like direct cash transfers for women and guaranteed work to the national level. It positions the party as a defender of federalism and secularism, promising to repeal controversial laws like the CAA and NRC while opposing the current Union Government's policies. The core message is to deliver 'people-centric' governance modeled on its performance in West Bengal.",
             "policy_scores": {
                 "Economy": {
                     "score": 1,
-                    "explanation": "The party proposes controlling fuel prices, providing free cooking gas cylinders to poor families, and reforming GST for more equitable revenue distribution."
+                    "explanation": "The party advocates for strong government intervention through price caps on fuel, providing free LPG cylinders, and reforming GST for more equitable state revenue."
                 },
                 "Education": {
                     "score": 1,
-                    "explanation": "The party aims to double the national education budget and increase scholarships and financial aid for students, especially from marginalized communities."
+                    "explanation": "The platform proposes doubling the national education budget and significantly expanding financial aid through scholarships and student credit cards for marginalized groups."
                 },
                 "Technology": {
                     "score": 2,
-                    "explanation": "The party plans to introduce a new bill to protect citizens' digital rights from surveillance and data breaches."
+                    "explanation": "The party supports tech industry growth but emphasizes strong regulation with a 'Digital Liberties Bill' and using technology for public welfare delivery."
                 },
                 "Environment": {
-                    "score": 2,
-                    "explanation": "The party advocates for strengthening environmental laws, increasing forest cover, and restoring natural habitats like mangroves and wetlands."
+                    "score": 1,
+                    "explanation": "The party takes a strong conservationist stance, pledging to increase forest cover, restore wetlands, and strengthen environmental protection laws against commercial use."
                 },
                 "Healthcare": {
                     "score": 1,
-                    "explanation": "The party proposes to triple the national healthcare budget and replace the current insurance scheme with one offering double the coverage for all."
+                    "explanation": "The party proposes a massive expansion of public healthcare by tripling the budget and replacing the current national scheme with a universal program offering double the insurance coverage."
                 },
                 "Defense": {
-                    "score": 3,
-                    "explanation": "The party plans to scrap the Agnipath recruitment scheme and restore traditional military recruitment methods."
+                    "score": 2,
+                    "explanation": "The party pledges to strengthen border security but also proposes repealing the Agnipath scheme to restore traditional, long-term military recruitment."
                 },
                 "Infrastructure": {
                     "score": 2,
-                    "explanation": "The party promises large-scale public works projects including guaranteed housing for the poor, universal tap water, and modernizing railways."
+                    "explanation": "The focus is on state-led development to provide universal access to core amenities like housing, tap water, and rural roads for all."
                 },
                 "Foreign Policy": {
                     "score": 3,
@@ -39,11 +39,11 @@
                 },
                 "Social Justice": {
                     "score": 1,
-                    "explanation": "The party plans to abolish the Citizenship Amendment Act (CAA), reject a Uniform Civil Code, and expand welfare schemes for women and marginalized communities."
+                    "explanation": "The party champions a strong progressive agenda by vowing to abolish the CAA and NRC, opposing a Uniform Civil Code, and expanding welfare for women and marginalized communities."
                 },
                 "Agriculture": {
                     "score": 1,
-                    "explanation": "The party promises to legally guarantee a minimum support price for all crops, set at least 50% above the cost of production."
+                    "explanation": "The party supports major government intervention by proposing a legally guaranteed Minimum Support Price for crops at 50% above production cost."
                 }
             }
         }
@@ -52,47 +52,47 @@
         "id": 2,
         "name": "Communist Party Of India (Marxist) Manifesto English (2024)",
         "analysis": {
-            "summary": "This manifesto presents a comprehensive critique of the incumbent BJP government, accusing it of undermining India's secular democratic constitution and promoting a corporate-communal nexus. It calls for the defeat of the BJP to save the republic and proposes a set of alternative, pro-people policies focused on strengthening the public sector, ensuring social justice, and re-establishing a non-aligned foreign policy.",
+            "summary": "This manifesto aims to defeat the BJP to safeguard India's secular, democratic constitution from what it terms a 'fascistic Hindutva Rashtra'. It proposes a set of alternative, pro-people policies focused on reversing privatization, strengthening the public sector, and expanding social welfare programs to combat economic inequality.",
             "policy_scores": {
                 "Economy": {
                     "score": 1,
-                    "explanation": "The party advocates for reversing privatization, taxing the wealthy, and significantly strengthening the public sector's role in the economy."
+                    "explanation": "The party advocates for reversing privatization, increasing taxes on the wealthy, and strengthening the public sector to reduce inequality."
                 },
                 "Education": {
                     "score": 1,
-                    "explanation": "The party wants to significantly increase public funding for education to 6% of GDP and reverse policies of privatization and commercialization."
+                    "explanation": "The party proposes a major expansion of the public education system, an increase in spending to 6% of GDP, and an end to commercialization."
                 },
                 "Technology": {
-                    "score": 2,
-                    "explanation": "The party advocates for strong regulation of big tech companies, promoting public sector alternatives, and protecting citizens' digital privacy."
+                    "score": 1,
+                    "explanation": "The party calls for strong regulation of big tech companies, public control over digital infrastructure, and developing national self-reliance in technology."
                 },
                 "Environment": {
                     "score": 1,
-                    "explanation": "The party proposes strengthening environmental regulations, planning a just transition away from fossil fuels, and repealing pro-corporate environmental policies."
+                    "explanation": "The party advocates for stronger environmental regulations, a just transition to renewable energy, and treating natural resources like water as a public good."
                 },
                 "Healthcare": {
                     "score": 1,
-                    "explanation": "The party advocates for a universal, publicly funded healthcare system with free services and aims to raise health spending to 5% of GDP."
+                    "explanation": "The party demands a universal public healthcare system funded by the state, with the right to free healthcare and increased public spending to 5% of GDP."
                 },
                 "Defense": {
                     "score": 1,
-                    "explanation": "The party advocates for strengthening public sector defense manufacturing, ending contract-based military recruitment, and withdrawing from military alliances with the US."
+                    "explanation": "The party proposes strengthening public sector defense manufacturing, rolling back privatization, and ending the contractorization of armed forces recruitment."
                 },
                 "Infrastructure": {
                     "score": 1,
-                    "explanation": "The party proposes to reverse the privatization of national infrastructure and have it built and managed exclusively by the public sector."
+                    "explanation": "The party advocates for rolling back the privatization of core infrastructure like railways and electricity and wants development led by the public sector."
                 },
                 "Foreign Policy": {
                     "score": 1,
-                    "explanation": "The party calls for a non-aligned foreign policy, withdrawing from strategic alliances with the United States, and strengthening relations with developing countries."
+                    "explanation": "The party advocates for a non-aligned foreign policy, ending strategic alliances with the US and Israel, and strengthening cooperation among developing countries."
                 },
                 "Social Justice": {
                     "score": 1,
-                    "explanation": "The party advocates for expanding reservations to the private sector, conducting a caste census, and enacting laws to protect minorities and LGBTQ+ rights."
+                    "explanation": "The party advocates for extending reservations to the private sector, conducting a caste census, and scrapping the Citizenship Amendment Act (CAA)."
                 },
                 "Agriculture": {
                     "score": 1,
-                    "explanation": "The party supports a legal guarantee for crop prices (MSP), a comprehensive farm loan waiver, and increased public investment in agriculture."
+                    "explanation": "The party proposes a legally guaranteed minimum support price for crops, comprehensive loan waivers for farmers, and increased public investment in agriculture."
                 }
             }
         }
@@ -101,47 +101,47 @@
         "id": 3,
         "name": "Communist Party Of India Manifesto English (2024)",
         "analysis": {
-            "summary": "This manifesto presents a strong critique of the incumbent government, framing its policies as pro-corporate and divisive. It advocates for a significant shift towards a state-led economy with wealth redistribution, expanded social justice measures like reservations, and the protection of secular, constitutional values.",
+            "summary": "This manifesto presents a strong critique of the incumbent BJP government, accusing it of pro-corporate, divisive, and anti-democratic policies. The Communist Party of India (CPI) positions itself as a staunch defender of the constitution, secularism, and federalism, advocating for a significant expansion of the public sector, robust social welfare programs, and the protection of rights for workers, farmers, and marginalized communities.",
             "policy_scores": {
                 "Economy": {
                     "score": 1,
-                    "explanation": "The party proposes strong government intervention, including wealth and inheritance taxes, increased corporate taxes, and an end to the privatization of public assets."
+                    "explanation": "The party advocates for wealth and inheritance taxes, increased corporate taxes, and an end to the privatization of public assets to reduce inequality."
                 },
                 "Education": {
                     "score": 1,
-                    "explanation": "The manifesto advocates for scrapping the New Education Policy and significantly increasing public spending to ensure free, universal, and secular education for all."
+                    "explanation": "The party calls for a massive increase in public education funding to at least 10% of GDP and scrapping the current national education policy."
                 },
                 "Technology": {
-                    "score": 2,
-                    "explanation": "The party supports harnessing new technologies like AI for public benefit and increasing public investment in R&D, while protecting intellectual property for people over corporations."
+                    "score": 1,
+                    "explanation": "The party supports harnessing technology like AI for public good and reforming intellectual property laws to favor people over corporations."
                 },
                 "Environment": {
                     "score": 1,
-                    "explanation": "The party calls for strong laws to conserve forests and water bodies, remove encroachments by mining lobbies, and focus on renewable energy sources."
+                    "explanation": "The party advocates for strict environmental protection, cracking down on corporate encroachment, and focusing on renewable energy."
                 },
                 "Healthcare": {
                     "score": 1,
-                    "explanation": "It proposes a major increase in public health spending to 6% of GDP, radical improvements in public hospitals, and regulation of the private healthcare system."
+                    "explanation": "The party demands a significant increase in public healthcare spending to at least 6% of GDP and a review of the private healthcare system to make it affordable."
                 },
                 "Defense": {
                     "score": 2,
-                    "explanation": "The party demands the scrapping of the contractual Agnipath scheme to restore older, more permanent service conditions for armed forces personnel."
+                    "explanation": "The party proposes scrapping the Agnipath scheme to restore traditional, permanent employment conditions for armed forces personnel."
                 },
                 "Infrastructure": {
-                    "score": 2,
-                    "explanation": "The manifesto commits to developing urban infrastructure and constructing affordable housing within the public sector to improve living conditions."
+                    "score": 1,
+                    "explanation": "The party commits to developing urban infrastructure and affordable housing through public sector initiatives."
                 },
                 "Foreign Policy": {
                     "score": 1,
-                    "explanation": "The party advocates for an independent, anti-imperialist foreign policy, strengthening ties with the Global South and expressing solidarity with Palestine."
+                    "explanation": "The party advocates for an independent, anti-imperialist foreign policy based on non-alignment and solidarity with Palestine."
                 },
                 "Social Justice": {
                     "score": 1,
-                    "explanation": "The manifesto strongly supports extending reservations to the private sector, removing the 50% cap, repealing the CAA, and implementing women's reservation immediately."
+                    "explanation": "The party strongly advocates for expanding reservations to the private sector, immediately implementing women's reservation, and repealing the Citizenship (Amendment) Act."
                 },
                 "Agriculture": {
                     "score": 1,
-                    "explanation": "It supports farmers with proposals for a comprehensive loan waiver, a legal guarantee for minimum support prices, and promoting public sector storage systems."
+                    "explanation": "The party supports legally guaranteed minimum prices for all farm produce, a complete loan-waiver, and land redistribution for the landless."
                 }
             }
         }
@@ -150,47 +150,47 @@
         "id": 4,
         "name": "Indian National Congress Party Manifesto English (2024)",
         "analysis": {
-            "summary": "This manifesto presents a strong focus on social and economic justice, aiming to reverse policies of the incumbent government. It prioritizes creating jobs, strengthening social safety nets through direct cash transfers and universal services, and upholding constitutional values and democratic institutions. The overall tone is critical of the past decade, positioning itself as a progressive alternative focused on equity, welfare, and freedom.",
+            "summary": "This manifesto focuses on social and economic justice, aiming to strengthen welfare programs and create jobs through government action and private sector support. It emphasizes protecting constitutional values, reversing policies of the current government, and providing direct financial support to marginalized groups, farmers, and women.",
             "policy_scores": {
                 "Economy": {
-                    "score": 1,
-                    "explanation": "The party advocates for a mixed economy that supports the private sector but also aims to create jobs, reduce inequality, and provide strong social welfare programs like direct cash transfers to the poor."
+                    "score": 2,
+                    "explanation": "The party supports a private sector-driven economy but proposes strong government intervention through job guarantees, welfare schemes, and tax reforms to reduce inequality."
                 },
                 "Education": {
                     "score": 1,
-                    "explanation": "The party plans to make public school education free and compulsory up to Class XII and will provide extensive financial aid, including a one-time write-off of all student loans."
+                    "explanation": "The party proposes making public school education free and compulsory up to Class XII and offering a one-time waiver on all student education loans."
                 },
                 "Technology": {
                     "score": 2,
-                    "explanation": "The party supports using technology to improve public services like education while also promising to strengthen data privacy and prevent internet censorship."
+                    "explanation": "The party aims to ensure equitable access to technology for students and protect digital rights and privacy by reviewing current data and surveillance laws."
                 },
                 "Environment": {
                     "score": 1,
-                    "explanation": "The party proposes creating a powerful independent environmental authority and launching a \"Green New Deal\" to invest heavily in renewable energy and green jobs."
+                    "explanation": "The party proposes creating a strong independent environmental protection authority and launching a 'Green New Deal' to invest in renewable energy and green jobs."
                 },
                 "Healthcare": {
                     "score": 1,
-                    "explanation": "The party pledges to provide universal and free healthcare in public facilities, supported by a government-funded cashless insurance scheme for all citizens."
+                    "explanation": "The party promises universal, free healthcare in public facilities and a national cashless insurance scheme of up to ₹25 lakhs for all citizens."
                 },
                 "Defense": {
                     "score": 2,
-                    "explanation": "The party plans to scrap the current short-term military recruitment scheme (Agnipath) and return to a traditional system that offers permanent jobs and benefits for soldiers."
+                    "explanation": "The party plans to scrap the new 'Agnipath' short-term military recruitment scheme and return to the traditional system that provides more job security for soldiers."
                 },
                 "Infrastructure": {
                     "score": 2,
-                    "explanation": "The party aims to build infrastructure using both public and private funds but will ensure projects primarily serve the public interest rather than benefiting private companies."
+                    "explanation": "The party aims to use both public and private funds for development while ensuring projects primarily serve common people and reviewing high road tolls."
                 },
                 "Foreign Policy": {
                     "score": 3,
-                    "explanation": "The party plans to return to a traditional foreign policy of strategic autonomy and peaceful engagement, aiming to repair relationships with neighbors and strengthen India's role in global institutions."
+                    "explanation": "The party aims to restore India's traditional foreign policy focused on strategic autonomy, peaceful co-existence, and repairing relationships with neighboring countries."
                 },
                 "Social Justice": {
                     "score": 1,
-                    "explanation": "The party promises to conduct a national caste census and raise the legal limit on reservations for backward classes to ensure greater representation in jobs and education."
+                    "explanation": "The party commits to conducting a nationwide caste census, raising the 50% cap on reservations, and providing direct cash transfers to poor families and women."
                 },
                 "Agriculture": {
                     "score": 1,
-                    "explanation": "The party will give farmers a legal guarantee for minimum support prices for their crops and create a commission to handle agricultural loan forgiveness."
+                    "explanation": "The party promises a legally guaranteed Minimum Support Price (MSP) for crops as recommended by the Swaminathan Commission to ensure farmer profitability."
                 }
             }
         }

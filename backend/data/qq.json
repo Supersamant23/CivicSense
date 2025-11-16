@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "question": "Do you support government initiatives to boost economic growth?",
+        "question": "Should taxes be reduced to encourage private sector development?",
         "tag": "Economy",
         "options": {
             "1": "Strongly Disagree",
@@ -13,7 +13,7 @@
     },
     {
         "id": 2,
-        "question": "Should education be more practical and skill-oriented?",
+        "question": "Should government increase funding for schools and universities?",
         "tag": "Education",
         "options": {
             "1": "Strongly Disagree",
@@ -37,7 +37,7 @@
     },
     {
         "id": 4,
-        "question": "Do you support increased funding for renewable energy?",
+        "question": "Do you agree with conservation programs for forests and wildlife?",
         "tag": "Environment",
         "options": {
             "1": "Strongly Disagree",
@@ -49,7 +49,7 @@
     },
     {
         "id": 5,
-        "question": "Do you support government initiatives for mental health?",
+        "question": "Should public hospitals receive increased funding?",
         "tag": "Healthcare",
         "options": {
             "1": "Strongly Disagree",
@@ -61,7 +61,7 @@
     },
     {
         "id": 6,
-        "question": "Do you support increased government spending on national defense?",
+        "question": "Should military modernization programs be prioritized?",
         "tag": "Defense",
         "options": {
             "1": "Strongly Disagree",
@@ -73,7 +73,7 @@
     },
     {
         "id": 7,
-        "question": "Do you support development of roads, bridges, and housing?",
+        "question": "Should the government invest more in public transport and smart cities?",
         "tag": "Infrastructure",
         "options": {
             "1": "Strongly Disagree",
@@ -97,7 +97,7 @@
     },
     {
         "id": 9,
-        "question": "Should the government take action against discrimination?",
+        "question": "Do you support policies promoting gender equality?",
         "tag": "Social Justice",
         "options": {
             "1": "Strongly Disagree",
