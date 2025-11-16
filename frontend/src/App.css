@@ -218,9 +218,10 @@ body::before {
 /* --- 7. Minimalist Button (Saturated) --- */
 button {
   background-color: var(--navy);
+  position: relative;
   color: white;
   border: none;
-  padding: 1.1rem 2.5rem;
+  padding: 1.4rem 2.5rem;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 12px;
@@ -279,14 +280,58 @@ button:hover {
   background: linear-gradient(180deg, #FF8C00, #00FF00);
 }
 
+/* --- Modern Fixed Back Button --- */
+.fixed-back-btn {
+  /* Positioning */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 
-/* Hide on scroll down */
+  /* Gradient Background */
+  background: linear-gradient(
+    90deg, 
+    rgba(255, 122, 0, 0.7), /* Semi-transparent orange */
+    rgba(0, 194, 110, 0.7)  /* Semi-transparent green */
+  );
+  
+  /* Glass Effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* Sleek Shape & Text */
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px; /* Pill shape */
+  
+  /* Subtle Shadow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  /* Smooth Transition */
+  transition: all 0.25s ease-in-out;
+}
+
+.fixed-back-btn:hover {
+  /* Hover Effect */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  /* Brighten the gradient on hover */
+  background: linear-gradient(
+    90deg, 
+    rgba(255, 122, 0, 0.9), 
+    rgba(0, 194, 110, 0.9)
+  );
+}
+
+/* Hide/show on scroll (you already had this) */
 .fixed-back-btn.hide {
   opacity: 0;
   transform: translateY(-20px);
 }
-
-/* Show when scrolling up */
 .fixed-back-btn.show {
   opacity: 1;
   transform: translateY(0);

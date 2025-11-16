@@ -75,8 +75,6 @@ function Quiz() {
   if (results) {
     return (
       <div className="results-container">
-        {backButton}
-
         <h2>Your Results</h2>
         <div className="alignment-scores">
           <h3>Your Top Matches:</h3>
@@ -106,7 +104,6 @@ function Quiz() {
 
   return (
     <form className="quiz-form" onSubmit={handleSubmit}>
-      {backButton}
 
       <h2>Policy Quiz</h2>
       {questions.map((q, index) => (
